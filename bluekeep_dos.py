@@ -338,7 +338,7 @@ def main():
         for ip in opt.ipToAttack.split(","):
             to_attack.append(ip.strip())
     else:
-        print("usage: python bluekeep_dos.py [-i IP[IP,IP,...]] [-p PORT] [-a 32|64]")
+        print("usage: %s [-i IP[IP,IP,...]] [-p PORT] [-a 32|64]" % sys.argv[0])
         sys.exit(1)
 
     for target in to_attack:
