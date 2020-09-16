@@ -414,7 +414,7 @@ def main():
             for address in addresses.readlines():
                 to_scan.append(address.strip())
     else:
-        info("usage: %s [-i IP[IP,IP,...]] [-p PORT] [-f FILE]" % sys.argv[0])
+        info("usage: %s [-i IP[IP,IP,...]] [-p PORT] [-f FILE]" %(sys.argv[0]))
         sys.exit(1)
     for scan in to_scan:
         info("verifying RDP service on: {}".format(scan))
